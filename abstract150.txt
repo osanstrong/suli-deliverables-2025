@@ -1,0 +1,8 @@
+Implementation and analysis of toroidal raytracing agorithms for ORANGE and Monte Carlo transport simulations (15)
+
+Monte Carlo random particle simulations are a key tool in understanding machines from nuclear reactors to particle detectors.
+In order to trust a simulation of random particles in a structure, that structure must be accurately represented. 
+The Oak Ridge Advanced Nested Geometry Engine, or ORANGE, aims to do just this, representing constructions for a wide range of particle simulations, including Celeritas, a code simulating high energy, standard model particle transport.
+However, certain shapes, such as toroids, cannot yet be directly represented by the engine, a crucial setback in working with many teams whose machines can only be accurately represented using these shapes.
+A set of raytracing algorithms were prototyped for Orange, including a set of different algorithms to solve the necessary quartic equations.
+These algorithms were compared in the prototype to measure accuracy and precision across different test cases of toroid raytracing and general polynomials, allowing the best possible modeling of toroids in Orange.

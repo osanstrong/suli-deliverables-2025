@@ -6,3 +6,13 @@ The Oak Ridge Advanced Nested Geometry Engine, or ORANGE, aims to do just this, 
 However, certain shapes, such as toroids, cannot yet be directly represented by the engine, a crucial setback in working with many teams whose machines can only be accurately represented using these shapes.
 A set of raytracing algorithms were prototyped for Orange, including a set of different algorithms to solve the necessary quartic equations.
 These algorithms were compared in the prototype to measure accuracy and precision across different test cases of toroid raytracing and general polynomials, allowing the best possible modeling of toroids in Orange.
+
+draft_2_after_170_target_320:
+
+Monte Carlo particle simulations are crucial to understanding machines ranging from nuclear reactors to particle detectors.
+In order to trust these simulations of random particles in a structure, that structure must be accurately represented, typically using surface-based geometry.
+While traditional reactor cores can easily be represented by cylinders or planes, more advanced fission reactors, fusion reactors, and particle accelerators can often only be represented using more complex surfaces.
+The Oak Ridge Advanced Nested Geometry Engine, or ORANGE, used for Monte Carlo softwares like Shift and Celeritas, thus aims to thoroughly encompass these surfaces, such as toroids.
+Toroids are of particular interest, being both common in these structures, and requiring quartic equations to fully resolve.
+In our current efforts to support toroidal surfaces in ORANGE, we also seek to quantify the precision of different algorithms for toroid intersection.
+We construct a python code to quantify these limitations and their implications towards simulating toroidal surfaces.
